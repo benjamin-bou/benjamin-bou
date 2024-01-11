@@ -1,0 +1,124 @@
+html {
+    font-size: 120%;
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+header {
+    background: linear-gradient(to bottom, #ffffff, #dadada);
+
+
+}
+
+.menu {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.menu ul li {
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.bandeau h2 {
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+.bandeau {
+    background: linear-gradient(to bottom right, #99a5d8, #c4b5d7);
+    display: grid;
+    grid-template-columns: 50% 40%;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.bandeau .texte {
+    text-align: center;
+    font-size: 120%;
+    max-width: 600px;
+}
+
+.code-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 89px;
+    font-family: 'Varela Round';
+    font-size: 160%;
+    color: rgb(77, 73, 73);
+    background-color: rgb(36, 31, 31);
+    border-radius: 20px;
+    ;
+}
+
+.code-block div {
+    margin-bottom: 10px;
+}
+
+.code-block div:nth-child(2),
+.code-block div:nth-child(3),
+.code-block div:nth-child(4) {
+    padding-left: 15%;
+}
+
+.code-block div:nth-child(4) {
+    white-space: nowrap;
+}
+
+.code-block div:nth-child(5) {
+    margin: 0px;
+}
+
+.html-design {
+    display: flex;
+}
+
+.html-color {
+    color: rgba(230, 81, 81, 0.899);
+    transition: transform 0.5s,
+        color 0.15s;
+}
+
+.html-color:hover {
+    transform: translate(-1.5px, -2px);
+    color: rgb(186, 123, 123);
+}
+
+.css-color {
+    color: rgba(231, 193, 39, 0.899);
+}
+
+.src-color {
+    color: rgba(184, 56, 206, 0.899);
+}
+
+.js-src-color {
+    color: rgba(167, 245, 84, 0.899);
+}
+
+.language-color {
+    color: rgba(49, 179, 199, 0.899);
+}
