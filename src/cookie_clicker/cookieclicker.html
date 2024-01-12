@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mon clicker</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link rel=" stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/cookie.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script defer src="script/script.js"></script>
+
+</head>
+
+<body>
+    <header id="bandeau">
+        <h1>My clicker game</h1>
+    </header>
+    <main id="game">
+        <div id="clicker">
+            <div id="displayerCookies">
+            </div>
+
+            <img id="cookie" src="images/cookie.png" draggable="false" />
+        </div>
+        <aside id="upgrade">
+            <div id="upgrades">
+                <p>Améliorations</p>
+                <div id="upgradeButton">
+                    <p id="upgradeLevel"></p>
+                    <p id="upgradeCost"></p>
+                </div>
+            </div>
+            <section>
+                <p>Générateurs</p>
+                <ul id="multipliers">
+                    <li class="multiplier" data-pressed="false" data-value="1">x1</li>
+                    <li class="multiplier" data-pressed="false" data-value="10">x10</li>
+                    <li class="multiplier" data-pressed="false" data-value="100">x100</li>
+                </ul>
+            </section>
+            <div id="generators">
+            </div>
+            <div id="generatorDetails"></div>
+        </aside>
+    </main>
+</body>
+
+</html>

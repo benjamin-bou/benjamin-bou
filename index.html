@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <title>Benjamin B.</title>
     <meta name="author" content="Benjamin B.">
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
 </head>
 
@@ -14,29 +14,58 @@
     <header>
         <div class="menu">
             <ul>
-                <li><a>Mini projets</a></li>
-                <li><a>Visuels</a></li>
-                <li><a>Moi</a></li>
+                <li class="menu_item" id="projets"><a href="#horizontal_gallery_area">Mini projets</a></li>
+                <li class="menu_item" id="visuels"><a>Visuels</a></li>
+                <li class="menu_item" id="moi"><a>Moi</a></li>
             </ul>
         </div>
     </header>
-    <div class="bandeau">
-        <div class="texte">
-            <h1 class="name" id="benjamin">Benjamin</h1>
-            <h1 class="name" id="boutrois">Boutrois</h1>
-            <h2>Étudiant en développement web</h2>
-        </div>
-        <div class="code-block">
-            <div class="html-design">&#60<a class="html-color">HTML</a>&#62</div>
-            <div class="css-design">&#60<a class="language-color">style</a>&#62 <a class="css-color">{</a><br><a
-                    class="css-color">}</a><br>&#60/<a class="language-color">style</a>&#62</div>
-            <div class="php-design">&#60<a class="language-color">?php</a><br><a class="language-color">?</a>&#62</div>
-            <div class="js-design">&#60<a class="language-color">script <a class="src-color">src</a><a
-                        class="language-color">="</a><a class="js-src-color">my_script.js</a><a
-                        class="language-color">"</a></a>&#62<br>&#60/<a class="language-color">script</a>&#62</div>
-            <div class="html-design">&#60/<a class="html-color">HTML</a>&#62</div>
-        </div>
-    </div>
+    <main>
+
+        <section class="bandeau">
+            <article class="texte">
+                <h1 class="name" id="benjamin">Benjamin</h1>
+                <h1 class="name" id="boutrois">Boutrois</h1>
+                <h2>Étudiant en développement web</h2>
+            </article>
+            <aside class="code-block">
+                <div class="html-design">&#60;<a class="html-color">HTML</a>&#62;</div>
+                <div class="css-design">&#60;<a class="language-color">style</a>&#62; <a class="css-color">{</a><br><a
+                        class="css-color">}</a><br>&#60;/<a class="language-color">style</a>&#62;
+                </div>
+                <div class="php-design">&#60;<a class="language-color">?php</a><br><a class="language-color">?</a>&#62;
+                </div>
+                <div class="js-design">&#60;<a class="language-color">script <a class="src-color">src</a><a
+                            class="language-color">="</a><a class="js-src-color">my_script.js</a><a
+                            class="language-color">"</a></a>&#62;<br>&#60;/<a class="language-color">script</a>&#62;
+                </div>
+                <div class="html-design">&#60;/<a class="html-color">HTML</a>&#62;
+                </div>
+            </aside>
+        </section>
+        <section id="horizontal_gallery_area">
+            <section id="horizontal_gallery">
+                <article class="gallery_card">
+                    <a href="src/cookie_clicker/cookieclicker.html">
+                        <figure>
+                            <img src="images/cookieclicker.png" alt="Cookie clicker" class="card_img">
+                        </figure>
+                        <h3>Cookie clicker</h3>
+                    </a>
+                </article>
+                <article class="gallery_card">
+                    <a href="src/analog_clock/clock.html">
+                        <figure>
+                            <img src="images/clock.png" alt="Clock" class="card_img" id="clock">
+                        </figure>
+                        <h3>Clock</h3>
+                    </a>
+                </article>
+            </section>
+        </section>
+        <section id="skills">
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,0 +1,96 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round';
+    height: 100%;
+    overflow-y: hidden;
+    user-select: none;
+    font-size: 2vh;
+}
+
+header {
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+#clock {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 70%;
+    width: 70%;
+}
+
+.number {
+    position: absolute;
+    font-size: 200%;
+    font-weight: bold;
+    transform-origin: 50% 100%;
+}
+
+.hands {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    position: absolute;
+    width: 1.5%;
+    height: 25%;
+    background: black;
+    border-radius: 10px;
+    transform-origin: 50% 100%;
+    top: 25%;
+    left: 50%;
+}
+
+#minute {
+    position: absolute;
+    width: 1%;
+    height: 40%;
+    background: black;
+    border-radius: 6px;
+    transform-origin: 50% 100%;
+    top: 10%;
+    left: 49.5%;
+}
+
+#second {
+    position: absolute;
+    background: darkred;
+    width: 0.6%;
+    height: 40%;
+    border-radius: 3px;
+    transform-origin: 50% 100%;
+    top: 10%;
+    left: 50%;
+}
+
+#circle {
+    position: absolute;
+    background: black;
+    width: 3%;
+    height: 3%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
