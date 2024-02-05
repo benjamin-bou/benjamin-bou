@@ -1,4 +1,5 @@
 "use strict";
+const home_button = document.getElementById("home-btn");
 const cookie = document.getElementById("cookie");
 const displayerCookies = document.getElementById("displayerCookies");
 const clicUpgrader = document.getElementById("upgradeButton");
@@ -16,6 +17,7 @@ let generatorsCost = [50, 200, 1000, 5000, 10000];
 let generatorsGen = [0.2, 1, 5, 100, 1000];
 
 function setupEventListeners() {
+    home_button.addEventListener("click", handleHomeBtn)
     cookie.addEventListener("click", handleClick);
     clicUpgrader.addEventListener("click", handleClicUpgradeClick);
     for (let i = 0; i < multipliers.length; i++) {
@@ -27,6 +29,10 @@ function setupEventListeners() {
 displayCookies();
 displayClicUpgradeButton();
 displayGenerators();
+
+function handleHomeBtn(event) {
+    window.location.href = "../../";
+}
 
 function handleClick(event) { //Clic sur le cookie
     cookies += clicUpgrade;
