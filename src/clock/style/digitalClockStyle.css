@@ -1,0 +1,29 @@
+/*DIGITAL CLOCK*/
+#digitalClock {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /*Pas affiché de base*/
+    width: 50%;
+    height: 20%;
+}
+
+#cadrant {
+    max-width: 80%;
+    border-radius: 50px 50px;
+}
+
+#digitalNumbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    padding: 5vh;
+}
+
+.digitalNumber {
+    font-size: 25vh;
+    font-weight: bold;
+    color: rgb(44, 42, 42);
+}

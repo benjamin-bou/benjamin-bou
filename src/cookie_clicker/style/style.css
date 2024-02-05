@@ -13,10 +13,43 @@ body {
     background-color: rgb(222, 193, 145);
     padding: 20px;
     height: 5%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid rgb(239, 186, 121);
+}
+
+#home-btn {
+    align-items: center;
+    position: relative;
+}
+
+#home-btn:hover {
+    cursor: pointer;
+}
+
+#home-btn:hover #home {
+    opacity: 100;
+    display: inline;
+    left: 40px;
+}
+
+#inf {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    height: 20px;
+    font-size: 5vh;
+}
+
+#home {
+    position: absolute;
+    opacity: 0;
+    left: 10px;
+    top: 0;
+    transition: left 1s, opacity 1s;
 }
 
 h1 {
@@ -166,6 +199,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     border: 0.3vh solid black;
+    left: calc(min(max(0px, 50%), max(0px, calc(100% - 100px))), min(calc(100% - 100px), max(0px, calc(50% - 100px))));
+    top: calc(min(max(0px, 50%), max(0px, calc(100% - 100px))), min(calc(100% - 100px), max(0px, calc(50% - 100px))));
 }
 
 /* Largeur */

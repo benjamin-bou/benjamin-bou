@@ -1,0 +1,47 @@
+/*GESTION DU SWITCH ASIDE*/
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+.clockSwitch {
+    position: relative;
+    /*Essayer d'enlever*/
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(157, 156, 156);
+    border: solid 2px black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+
+.clockSwitch.active {
+    background-color: rgb(63, 116, 194);
+}
+
+.toggle {
+    height: 26px;
+    width: 26px;
+    top: 2px;
+    left: 2px;
+    border-radius: 100px;
+    background-color: white;
+    position: relative;
+    transition: all linear .2s;
+}
+
+.toggle.active {
+    left: 32px;
+}

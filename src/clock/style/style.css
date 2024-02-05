@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round';
+    height: 100%;
+    overflow-y: hidden;
+    user-select: none;
+    font-size: 2vh;
+    background-color: rgb(206, 208, 209);
+}
+
+#home-btn {
+    top: 20px;
+    left: 20px;
+    align-items: center;
+    position: relative;
+}
+
+#home-btn:hover {
+    cursor: pointer;
+}
+
+#home-btn:hover #home {
+    opacity: 100;
+    display: inline;
+    left: 40px;
+}
+
+#inf {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    height: 20px;
+    font-size: 5vh;
+}
+
+#home {
+    position: absolute;
+    opacity: 0;
+    left: 10px;
+    top: 0;
+    transition: left 1s, opacity 1s;
+}

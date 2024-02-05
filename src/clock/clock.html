@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link rel=" stylesheet" type="text/css" href="style/style.css">
+    <link rel=" stylesheet" type="text/css" href="style/analogClockStyle.css">
+    <link rel=" stylesheet" type="text/css" href="style/digitalClockStyle.css">
+    <link rel=" stylesheet" type="text/css" href="style/switchStyle.css">
+    <script defer src="script/script.js"></script>
+</head>
+
+<body>
+    <div id="home-btn">
+        <div id="inf">&lt</div>
+        <div id="home">Home</div>
+    </div>
+    <main id="clockArea">
+        <section id="AnalogClock">
+            <div id="numbers"></div>
+            <div id="hour" class="hands"></div>
+            <div id="minute" class="hands"></div>
+            <div id="second" class="hands"></div>
+            <div id="circle"></div>
+        </section>
+        <section id="digitalClock">
+            <div id="cadrant">
+                <ul id="digitalNumbers">
+                    <li id="digitalHours" class="digitalNumber"></li>
+                    <li id="colon" class="digitalNumber">:</li>
+                    <li id="digitalMinutes" class="digitalNumber"></li>
+                    <li id="colon" class="digitalNumber">:</li>
+                    <li id="digitalSecondes" class="digitalNumber"></li>
+                </ul>
+            </div>
+        </section>
+        <aside id="menu">
+            <a>Analog</a>
+            <label class="clockSwitch" id="clockSwitch" data-clock="analog">
+                <div class="toggle" id="toggle"></div>
+            </label>
+            <a>Digital</a>
+        </aside>
+    </main>
+</body>
+
+</html>
