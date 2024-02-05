@@ -23,6 +23,8 @@ body {
 #home-btn {
     align-items: center;
     position: relative;
+    text-decoration: none;
+    color: black;
 }
 
 #home-btn:hover {

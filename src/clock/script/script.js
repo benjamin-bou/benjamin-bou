@@ -1,5 +1,4 @@
 "use strict";
-const home_button = document.getElementById("home-btn");
 const area = document.getElementById("clockArea");
 
 const analogClock = document.getElementById("AnalogClock");
@@ -18,11 +17,6 @@ const toggleSwitch = document.getElementById("toggle");
 displayClock();
 
 switchButton.addEventListener('click', handleSwitch);
-home_button.addEventListener("click", handleHomeBtn);
-
-function handleHomeBtn(event) {
-    window.location.replace("/index.html");
-}
 
 function displayClock() {
     let height = window.innerHeight;
